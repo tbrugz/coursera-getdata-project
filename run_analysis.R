@@ -1,12 +1,25 @@
 
+#
+# Script to make a tidy dataset + summary from the "Human Activity Recognition Using Smartphones Data Set"
+#
+# motivation article:
 # http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/
 #
+# project original dataset info:
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 #
+# dataset in zip format:
 # https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 #
 
+# how to run this script:
+# - set the working directory to "UCI HAR Dataset" dir   ## setwd(<dir>)
+# - source this script                                   ## source(<script>)
+
 # datadir <- "D:/edu/coursera-getdata/UCI HAR Dataset"
+# scriptfile <- "D:/edu/coursera-getdata/run_analysis.R"
+# setwd(datadir)
+# source(scriptfile)
 
 # features <- readfeatures(datadir)
 readfeatures <- function(dir) {
@@ -69,7 +82,5 @@ doitall <- function(datadir) {
     tidydata <- maketidy(data)
     writedata(datadir, tidydata)
 }
-
-# setwd(datadir)
 
 doitall(".")
