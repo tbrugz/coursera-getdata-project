@@ -7,6 +7,13 @@ This repo contains an `R` script that makes a tidy dataset from the
 
 This work is part of the [Getting and Cleaning Data](https://www.coursera.org/course/getdata) course's project.
 
+
+dependencies
+----------
+
+The `R` script depends on the [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html) package. You may install it with `install.packages("dplyr")`
+
+
 running
 -------
 
@@ -20,3 +27,10 @@ To run the script, follow these steps:
 5. source the script with full path ( `source("<script-dir>/run_analysis.R")` )
 
 After running, the script will write a file named `tidydata.txt` into the working directory.
+
+
+code book
+--------
+
+The code book for the generated tidy dataset is avaiable at [blob/master/CodeBook.md](blob/master/CodeBook.md)
+
