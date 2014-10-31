@@ -32,5 +32,5 @@ After running, the script will write a file named `tidydata.txt` into the workin
 code book
 --------
 
-The code book for the generated tidy dataset is avaiable at [blob/master/CodeBook.md](blob/master/CodeBook.md)
+The code book for the generated tidy dataset is avaiable at [CodeBook.md](CodeBook.md)
 
